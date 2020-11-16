@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: |cff33ffccpf|cffffffffUI|cffaaaaaa [Vanilla Plus]
+## Author: Shagu
+## Notes: pfUI modification for vanilla plus server
+## Version: 1.0
+## Dependencies: pfUI
+
+# main
+pfUI-vanillaplus.lua
