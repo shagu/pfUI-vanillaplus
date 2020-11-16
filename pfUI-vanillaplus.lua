@@ -50,6 +50,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Scatter Shot']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
   end
 
