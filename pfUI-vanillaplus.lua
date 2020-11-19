@@ -1,6 +1,6 @@
 -- A Module to update pfUI to match vanilla plus server (enUS only)
 -- based on research of @Heroclastus09 and @hawaiisa
--- https://github.com/Heroclastus09/pfUI @6ab9c6a55e6845355549b112f267b264a815e451
+-- https://github.com/Heroclastus09/pfUI @7b190e92656dc76884bdd5f342e064879a2c85c2
 pfUI:RegisterModule("vanillaplus", function()
   do -- add talent based debuffs to dynamic debuffs
     pfUI_locale["enUS"]["dyndebuffs"]["Challenging Shout"] = "Challenging Shout"
