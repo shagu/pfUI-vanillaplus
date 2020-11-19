@@ -18,3 +18,16 @@ Once you took over maintanance, please remove this part from the README.md and a
 3. Rename the folder "pfUI-vanillaplus-master" to "pfUI-vanillaplus"
 4. Copy "pfUI-vanillaplus" into Wow-Directory\Interface\AddOns
 5. Restart Wow
+
+## Features
+
+Vanilla+ is providing a custom client with spells, debuffs and other features that differ from the original game.
+This pfUI module updates the pfUI core components to make them aware of those changes. Basically, this is on par
+with the features provided by the vanilla+ pfUI fork of [@Heroclastus09](https://github.com/Heroclastus09/pfUI),
+with the advantage of being able to always use the latest version of pfUI instead of relying on a outdated version.
+In general, those vanilla+ custom changes are:
+
+- Updated debuff durations
+- Updated cast durations
+- Updated talent based calculations (for debuffs and cast times)
+- Updated duration of totems and custom totems
