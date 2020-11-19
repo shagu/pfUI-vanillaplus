@@ -169,7 +169,10 @@ pfUI:RegisterModule("vanillaplus", function()
              if countEx and countEx > 0 then duration = duration + ( duration / 100 * (countEx*25)) end
 
           -- Total Control for Cheap Shot, Blind and Sap
-          elseif effect == L["dyndebuffs"]["Cheap Shot"] or L["dyndebuffs"]["Blind"]or L["dyndebuffs"]["Sap"] then
+          elseif effect == L["dyndebuffs"]["Cheap Shot"]
+            or effect == L["dyndebuffs"]["Blind"]
+            or effect == L["dyndebuffs"]["Sap"]
+          then
              local _,_,_,_,countTC = GetTalentInfo(1,16)
              if countTC and countTC > 0 then duration = duration + (countTC*.5) end
           end
@@ -201,7 +204,11 @@ pfUI:RegisterModule("vanillaplus", function()
         -- WARLOCK
         elseif class == "WARLOCK" then
           -- Jinx with 4 Curses
-          if effect == L["dyndebuffs"]["Curse of Weakness"]or L["dyndebuffs"]["Curse of Recklessness"] or L["dyndebuffs"]["Curse of the Elements"]or L["dyndebuffs"]["Curse of Shadow"] then
+          if effect == L["dyndebuffs"]["Curse of Weakness"]
+            or effect == L["dyndebuffs"]["Curse of Recklessness"]
+            or effect == L["dyndebuffs"]["Curse of the Elements"]
+            or effect == L["dyndebuffs"]["Curse of Shadow"]
+          then
             local _,_,_,_,countJ = GetTalentInfo(1,2)
             if countJ and countJ > 0 then duration = duration + countJ*30 end
 
@@ -211,7 +218,10 @@ pfUI:RegisterModule("vanillaplus", function()
              if countJ and countJ > 0 then duration = duration + countJ*3 end
 
           -- Prolonged Misery
-          elseif effect == L["dyndebuffs"]["Curse of Agony"] or L["dyndebuffs"]["Immolate"] or L["dyndebuffs"]["Corruption"] then
+          elseif effect == L["dyndebuffs"]["Curse of Agony"]
+            or effect == L["dyndebuffs"]["Immolate"]
+            or effect == L["dyndebuffs"]["Corruption"]
+          then
              local _,_,_,_,countPM = GetTalentInfo(1,8)
              if countPM and countPM > 0 then duration = duration + countPM * 3 end
           end
@@ -219,7 +229,10 @@ pfUI:RegisterModule("vanillaplus", function()
         -- WARRIOR
         elseif class == "WARRIOR" then
           -- Booming Voice
-          if effect == L["dyndebuffs"]["Demoralizing Shout"] or effect == L["dyndebuffs"]["Challenging Shout"]or effect == L["dyndebuffs"]["Intimidating Shout"] then
+          if effect == L["dyndebuffs"]["Demoralizing Shout"]
+            or effect == L["dyndebuffs"]["Challenging Shout"]
+            or effect == L["dyndebuffs"]["Intimidating Shout"]
+          then
             local _,_,_,_,countBV = GetTalentInfo(2,2)
             if countBV and countBV == 1 then duration = duration * 1.3 end
             if countBV and countBV == 2 then duration = duration * 1.5 end
@@ -233,7 +246,12 @@ pfUI:RegisterModule("vanillaplus", function()
         -- DRUID
         elseif class == "DRUID" then
           -- Power of Nature
-          if effect == L["dyndebuffs"]["Moonfire"] or L["dyndebuffs"]["Insect Swarm"] or L["dyndebuffs"]["Soothe Animal"]or L["dyndebuffs"]["Faerie Fire"] or L["dyndebuffs"]["Hibernate"]then
+          if effect == L["dyndebuffs"]["Moonfire"]
+            or effect == L["dyndebuffs"]["Insect Swarm"]
+            or effect == L["dyndebuffs"]["Soothe Animal"]
+            or effect == L["dyndebuffs"]["Faerie Fire"]
+            or effect == L["dyndebuffs"]["Hibernate"]
+          then
             local _,_,_,_,countPON = GetTalentInfo(1,12)
             if countPON and countPON == 1 then duration = duration*1.25 end
             if countPON and countPON == 2 then duration = duration*1.5 end
