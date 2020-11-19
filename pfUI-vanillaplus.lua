@@ -55,7 +55,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
   end
 
-  do -- adjust totem durations
+  if pfUI.api.libtotem and pfUI.api.libtotem.totems then -- adjust totem durations
     libtotem.totems["Spell_Nature_StoneClawTotem"] = {[-1] = 20}
     libtotem.totems["Spell_Nature_TremorTotem"] = {[-1] = 20}
     libtotem.totems["INV_Spear_04"] = {[-1] = 300}
