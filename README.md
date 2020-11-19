@@ -11,7 +11,7 @@ while keeping it in sync with the official pfUI. If you're eager to continue her
 if you need anything particular on the main pfUI to be changed in order to continue.
 Once you took over maintanance, please remove this part from the README.md and add yourself to the LICENSE.
 
-## Installation (Vanilla, 1.12)
+## Installation
 
 1. Download **[Latest Version](https://github.com/shagu/pfUI-vanillaplus/archive/master.zip)**
 2. Unpack the Zip file
