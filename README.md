@@ -30,6 +30,37 @@ In general, those vanilla+ custom changes are:
 
 ## Changelog (Summary)
 
+**Hunter:**
+- Aimed and Multi Shot show the correct cast times and are affected by the Snap Shot talent
+- Hunters Mark shows correct debuff time and is correctly affected by Improved Hunters Mark talent
+- Concussive and Scatter Shot show correct (new) duration
+- Scorpid Sting and improved Scorpid Sting show correct duratin
+
+**Rogue:**
+- Duration altering talents affecting debuffs should work correctly (Total Control, Improved Gouge, Exhaustion, Serrated Blades)
+
+**Warrior:**
+- Hamstring duration corrected, talent interaction with Improved Hamstring added
+- Booming Voice should correctly affect debuff times for Shouts
+
+**Warlock:**
+- Prolonged Misery and Jinx should correctly increase the associated Curses duration, base Curse duration corrected
+
+**Priest:**
+- Mindflay debuff time corrected
+- Shadow Word Pain should display correct in relation to Improved Shadow Word Pain talent
+
+**Paladin:**
+- Improved Hammer of Justice should affect Hammers shown debuff time
+
+**Druid:**
+- Mighty Roots and Power of Nature should affect the associated spells shown debuff timers
+
+**Mage:**
+- Permafrost should correctly increase Frostbolts debuff duration, Frostbolt baseline debuff times corrected
+
+**Shaman:**
+- corrected a few totem durations
 
 
 ## Changelog v 0.51
