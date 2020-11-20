@@ -6,7 +6,7 @@ The modifications are based on the research of [@Heroclastus09](https://github.c
 Many thanks go to Shagu for enabling this practical module and for his support and advice :)
 
 ## Important Note
-The non-modular version of pfUI V+ (https://github.com/heroclastus09/pfUI) will no longer be supported as this version offers much better integrity and flexibility, please only download this mod extension for Vanilla Plus !
+The non-modular version of pfUI V+ will no longer be supported as this version offers much better integrity and flexibility, please only download this mod extension for Vanilla Plus !
 
 ## Installation
 
