@@ -3,6 +3,7 @@
 An extension for [pfUI](https://github.com/shagu/pfUI) which adds support for the [Vanilla+ Server](https://vanillaplus.org/).
 The latest version of pfUI is required and only enUS-Gameclients are supported at the time.
 The modifications are based on the research of [@Heroclastus09](https://github.com/Heroclastus09/) and [@hawaiisa](https://github.com/hawaiisa/).
+Many thanks go to Shagu for enabling this practical module and for his support and advice :)
 
 ## Installation
 
