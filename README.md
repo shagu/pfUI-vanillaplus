@@ -34,7 +34,7 @@ In general, those vanilla+ custom changes are:
 - Aimed and Multi Shot show the correct cast times and are affected by the Snap Shot talent
 - Hunters Mark shows correct debuff time and is correctly affected by Improved Hunters Mark talent
 - Concussive and Scatter Shot show correct (new) duration
-- Scorpid Sting and improved Scorpid Sting show correct duratin
+- Scorpid Sting and improved Scorpid Sting show correct duration
 
 **Rogue:**
 - Duration altering talents affecting debuffs should work correctly (Total Control, Improved Gouge, Exhaustion, Serrated Blades)
