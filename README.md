@@ -4,8 +4,9 @@ An extension for [pfUI](https://github.com/shagu/pfUI) which adds support for th
 The latest version of pfUI is required and only enUS-Gameclients are supported at the time.
 The modifications are based on the research of [@Heroclastus09](https://github.com/Heroclastus09/) and [@hawaiisa](https://github.com/hawaiisa/).
 Many thanks go to Shagu for enabling this practical module and for his support and advice :)
-NOTE: The non-modular version of pfUI V+ will no longer be supported as this version offers much better integrity and flexibility, please only download this 
-mod extension for Vanilla Plus !
+
+## Important Note
+The non-modular version of pfUI V+ (https://github.com/heroclastus09/pfUI) will no longer be supported as this version offers much better integrity and flexibility, please only download this mod extension for Vanilla Plus !
 
 ## Installation
 
