@@ -10,7 +10,7 @@ The non-modular version of pfUI V+ (https://github.com/heroclastus09/pfUI) will 
 
 ## Installation
 
-1. Download latest version of pfUI **[Latest Version](https://github.com/shagu/pfUI)** and follow install instructions on that site
+1. Download **[Latest Version](https://github.com/shagu/pfUI)** of pfUI and follow install instructions on that site
 2. Download pfUI-vanillaplus-master.zip via the green code button on this page 
 2. Unpack the Zip file
 3. Rename the folder "pfUI-vanillaplus-master" to "pfUI-vanillaplus"
