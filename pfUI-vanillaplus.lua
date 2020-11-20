@@ -134,22 +134,29 @@ pfUI:RegisterModule("vanillaplus", function()
             -- Serrated Blades
             duration = duration + (countSB and countSB*2 or 0)
 
-          -- Garotte with Serrated Blades
+          -- Garotte 
           elseif effect == L["dyndebuffs"]["Garrote"] then
             local _,_,_,_,countSB = GetTalentInfo(3,13)
-            if countSB and countSB > 1 then duration = duration + 2*countSB end
-            if (countEx and countEx == 2 and  countSB and countSB > 0) then duration = (duration + GetComboPoints() * 2) * 1.5 + (countSB*2)end
+			
+			--Serrated Blades
+            duration = duration + (countSB and countSB*2 or 0)
 
-          -- Total Control for Kidney Shot
+          -- Kidney Shot
           elseif effect == L["dyndebuffs"]["Kidney Shot"] then
              local _,_,_,_,countTC = GetTalentInfo(1,16)
-             if countTC and countTC == 0 then duration = duration + GetComboPoints()*1 end
-             if countTC and countTC > 0 then duration = duration + GetComboPoints()*1 + (countTC*.5) end
+			 
+             -- Combo Points
+			 duration = duration + GetComboPoints()*1
+			 
+			 -- Total Control
+             duration = duration + (countTC and countTC*.5 or 0)
 
-          -- Expose Armor with Exhaustion
+          -- Expose Armor
           elseif effect == L["dyndebuffs"]["Expose Armor"] then
              local _,_,_,_,countEx = GetTalentInfo(1,6)
-             if countEx and countEx > 0 then duration = duration + ( duration / 100 * (countEx*25)) end
+			 
+			 -- Exhaustion
+             duration = duration + (countEx and duration*(countEx*.25) or 0)
 
           -- Total Control for Cheap Shot, Blind and Sap
           elseif effect == L["dyndebuffs"]["Cheap Shot"]
@@ -157,7 +164,7 @@ pfUI:RegisterModule("vanillaplus", function()
             or effect == L["dyndebuffs"]["Sap"]
           then
              local _,_,_,_,countTC = GetTalentInfo(1,16)
-             if countTC and countTC > 0 then duration = duration + (countTC*.5) end
+             duration = duration + (countTC and countTC*.5 or 0)
           end
 
         -- MAGE
@@ -165,7 +172,7 @@ pfUI:RegisterModule("vanillaplus", function()
           --  Permafrost (3/3)
           if effect == L["dyndebuffs"]["Frostbolt"] then
             local _,_,_,_,countIFB = GetTalentInfo(3,3)
-            if countIFB and countIFB > 0 then duration = duration + countIFB end
+            duration = duration + (countIFB and countIFB*1 or 0)
           end
 
         -- HUNTER
@@ -173,7 +180,7 @@ pfUI:RegisterModule("vanillaplus", function()
           -- Improved Hunters Mark
           if effect == L["dyndebuffs"]["Hunter\'s Mark"] then
             local _,_,_,_,countIHM = GetTalentInfo(2,1)
-            if countIHM and countIHM > 0 then duration = duration + 60*countIHM end
+            duration = duration + (countIHM and countIHM*60 or 0)
           end
 
         -- PRIEST
@@ -181,7 +188,7 @@ pfUI:RegisterModule("vanillaplus", function()
           -- Improved Shadow Word: Pain
           if effect == L["dyndebuffs"]["Shadow Word: Pain"] then
             local _,_,_,_,countSWP = GetTalentInfo(3,2)
-            if countSWP and countSWP > 0 then duration = duration + countSWP * 3 end
+            duration = duration + (countSWP and countSWP*3 or 0)
           end
 
         -- WARLOCK
@@ -193,12 +200,12 @@ pfUI:RegisterModule("vanillaplus", function()
             or effect == L["dyndebuffs"]["Curse of Shadow"]
           then
             local _,_,_,_,countJ = GetTalentInfo(1,2)
-            if countJ and countJ > 0 then duration = duration + countJ*30 end
+            duration = duration + (countJ and countJ*30 or 0)
 
           -- Curse of Exhaustion with Jinx
           elseif effect == L["dyndebuffs"]["Curse of Exhaustion"] then
              local _,_,_,_,countJ = GetTalentInfo(1,2)
-             if countJ and countJ > 0 then duration = duration + countJ*3 end
+             duration = duration + (countJ and countJ*3 or 0)
 
           -- Prolonged Misery
           elseif effect == L["dyndebuffs"]["Curse of Agony"]
@@ -206,7 +213,7 @@ pfUI:RegisterModule("vanillaplus", function()
             or effect == L["dyndebuffs"]["Corruption"]
           then
              local _,_,_,_,countPM = GetTalentInfo(1,8)
-             if countPM and countPM > 0 then duration = duration + countPM * 3 end
+             duration = duration + (countPM and countPM*3 or 0)
           end
 
         -- WARRIOR
@@ -223,7 +230,7 @@ pfUI:RegisterModule("vanillaplus", function()
           -- Improved Hamstring
           elseif effect == L["dyndebuffs"]["Hamstring"] then
             local _,_,_,_,countIHS = GetTalentInfo(1,7)
-            if countIHS and countIHS > 0 then duration = duration + 3*countIHS end
+            duration = duration + (countIHS and countIHS*3 or 0)
           end
 
         -- DRUID
@@ -236,15 +243,14 @@ pfUI:RegisterModule("vanillaplus", function()
             or effect == L["dyndebuffs"]["Hibernate"]
           then
             local _,_,_,_,countPON = GetTalentInfo(1,12)
-            if countPON and countPON == 1 then duration = duration*1.25 end
-            if countPON and countPON == 2 then duration = duration*1.5 end
+            duration = duration + (countPON and duration*(countPON*.25) or 0)
 
           -- Mighty Roots
           elseif effect == L["dyndebuffs"]["Entangling Roots"] then
             local _,_,_,_,countMR = GetTalentInfo(1,4)
             if countMR and countMR == 1 then duration = duration*1.4 end
-            if countMR and countMR == 1 then duration = duration*1.7 end
-            if countMR and countMR == 1 then duration = duration*2.0 end
+            if countMR and countMR == 2 then duration = duration*1.7 end
+            if countMR and countMR == 3 then duration = duration*2.0 end
           end
 
         -- PALADIN
