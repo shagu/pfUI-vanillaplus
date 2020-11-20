@@ -5,6 +5,7 @@ The latest version of pfUI is required and only enUS-Gameclients are supported a
 The modifications are based on the research of [@Heroclastus09](https://github.com/Heroclastus09/) and [@hawaiisa](https://github.com/hawaiisa/).
 
 ## Note
+**Update: A maintainer has been found, please visit: [pfUI-vanillaplus](https://github.com/Heroclastus09/pfUI-vanillaplus) to get the latest version.**
 
 I don't play on this realm and therefore won't maintain this addon. So this is just an example how things could be done
 while keeping it in sync with the official pfUI. If you're eager to continue here, feel free to fork and [hit me up](https://github.com/shagu/)
