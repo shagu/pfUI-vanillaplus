@@ -47,10 +47,14 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
     pfUI_locale["enUS"]["debuffs"]['Kidney Shot']={[0]=1.0,[1]=0.0,[2]=1.0,}
+	pfUI_locale["enUS"]["debuffs"]['Maim']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Mind Flay']={[0]=4.0,}
+	pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Scatter Shot']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
+	pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
+	pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
   end
@@ -189,6 +193,10 @@ pfUI:RegisterModule("vanillaplus", function()
           if effect == L["dyndebuffs"]["Shadow Word: Pain"] then
             local _,_,_,_,countSWP = GetTalentInfo(3,2)
             duration = duration + (countSWP and countSWP*3 or 0)
+			
+		  elseif effect == L["dyndebuffs"]["Psychic Scream"] then
+            local _,_,_,_,countIPS = GetTalentInfo(3,7)
+            duration = duration + (countIPS and countIPS*1 or 0)
           end
 
         -- WARLOCK
