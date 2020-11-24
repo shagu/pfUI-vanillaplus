@@ -49,6 +49,7 @@ In general, those vanilla+ custom changes are:
 **Priest:**
 - Mindflay debuff time corrected
 - Shadow Word Pain should display correct in relation to Improved Shadow Word Pain talent
+- Shadow Word: Numb debuff duration is shown
 
 **Paladin:**
 - Improved Hammer of Justice should affect Hammers shown debuff time
@@ -62,6 +63,9 @@ In general, those vanilla+ custom changes are:
 **Shaman:**
 - corrected a few totem durations
 
+## Changelog v 0.52
+
+- added a few v+ skill debuff durations, corrected some non-working code
 
 ## Changelog v 0.51
 
