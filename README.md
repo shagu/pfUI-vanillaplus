@@ -45,6 +45,7 @@ In general, those vanilla+ custom changes are:
 
 **Warlock:**
 - Prolonged Misery and Jinx should correctly increase the associated Curses duration, base Curse duration corrected
+- added debuff timer for Shock and Awe Skill
 
 **Priest:**
 - Mindflay debuff time corrected
