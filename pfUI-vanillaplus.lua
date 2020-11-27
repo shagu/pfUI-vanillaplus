@@ -18,6 +18,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["dyndebuffs"]["Curse of Agony"] = "Curse of Agony"
     pfUI_locale["enUS"]["dyndebuffs"]["Corruption"] = "Corruption"
     pfUI_locale["enUS"]["dyndebuffs"]["Immolate"] = "Immolate"
+	pfUI_locale["enUS"]["dyndebuffs"]["Earth Shock"] = "Earth Shock"
     pfUI_locale["enUS"]["dyndebuffs"]["Psychic Scream"] = "Psychic Scream"
     pfUI_locale["enUS"]["dyndebuffs"]["Cheap Shot"] = "Cheap Shot"
     pfUI_locale["enUS"]["dyndebuffs"]["Hunter\'s Mark"] = "Hunter\'s Mark"
@@ -38,11 +39,13 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Curse of Weakness']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Curse of the Elements']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
+	pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
     pfUI_locale["enUS"]["debuffs"]['Ghostly Strike']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Hamstring']={[0]=9.0,}
     pfUI_locale["enUS"]["debuffs"]['Hunter\'s Mark']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Improved Scorpid Sting']={[0]=30.0,}
+	pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Insect Swarm']={[0]=16.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
@@ -52,6 +55,7 @@ pfUI:RegisterModule("vanillaplus", function()
 	pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Scatter Shot']={[0]=5.0,}
+	pfUI_locale["enUS"]["debuffs"]['Sand Blast']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
 	pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
 	pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=4.0,}
@@ -77,9 +81,13 @@ pfUI:RegisterModule("vanillaplus", function()
       if begin then
         -- reduce duration based on v+ talents
         local duration = 3000
-        local _,_,_,_,count = GetTalentInfo(2,14)
-        if count then
-          duration = duration - count*200
+        local _,_,_,_,countSS = GetTalentInfo(2,14)
+		local _,_,_,_,countMS = GetTalentInfo(3,9)
+        if countSS then
+          duration = duration - countSS*200
+        end
+		if countMS then
+          duration = duration + countMS*1500
         end
 
         -- trigger original function
@@ -92,9 +100,13 @@ pfUI:RegisterModule("vanillaplus", function()
       if begin then
         -- reduce duration based on v+ talents
         local duration = 1000
-        local _,_,_,_,count = GetTalentInfo(2,14)
-        if count then
-          duration = duration - count*200
+        local _,_,_,_,countSS = GetTalentInfo(2,14)
+		local _,_,_,_,countMS = GetTalentInfo(3,9)
+        if countSS then
+          duration = duration - countSS*200
+        end
+		if countMS then
+          duration = duration + countMS*1500
         end
 
         -- trigger original function
@@ -266,7 +278,15 @@ pfUI:RegisterModule("vanillaplus", function()
           -- Improved Hammer of Justice
           if effect == L["dyndebuffs"]["Hammer of Justice"] then
             local _,_,_,_,countHOJ = GetTalentInfo(2,6)
-            if countHOJ and countHOJ > 0 then duration = duration + countHOJ*.5 end
+            duration = duration + (countHOJ and countHOJ*.5 or 0)
+          end
+		  
+		-- SHAMAN
+        elseif class == "SHAMAN" then
+          -- Earths Grasp
+          if effect == L["dyndebuffs"]["Earth Shock"] then
+            local _,_,_,_,countEG = GetTalentInfo(1,4)
+            duration = duration + (countEG and countEG*.5 or 0)
           end
         end
 
