@@ -31,7 +31,7 @@ In general, those vanilla+ custom changes are:
 ## Changelog (Summary)
 
 **Hunter:**
-- Aimed and Multi Shot show the correct cast times and are affected by the Snap Shot talent
+- Aimed and Multi Shot show the correct cast times and are affected by the Snap Shot and Melee Specialization Talent
 - Hunters Mark shows correct debuff time and is correctly affected by Improved Hunters Mark talent
 - Concussive and Scatter Shot show correct (new) duration
 - Scorpid Sting and improved Scorpid Sting show correct duration
@@ -53,15 +53,27 @@ In general, those vanilla+ custom changes are:
 
 **Paladin:**
 - Improved Hammer of Justice should affect Hammers shown debuff time
+- added debuff timer for Inner Light
 
 **Druid:**
 - Mighty Roots and Power of Nature should affect the associated spells shown debuff timers
+- Moonfire base debuff durations corrected
 
 **Mage:**
 - Permafrost should correctly increase Frostbolts debuff duration, Frostbolt baseline debuff times corrected
 
 **Shaman:**
 - corrected a few totem durations
+- Earth Shock debuff time should be displayed and affected by Earth Graps Talent
+- added debuff timer for Sand Blast
+
+
+## Changelog v 0.53
+
+- Multi and Aimed Shot cast time should be also influenced by Melee Specialization Talent
+- Added Shaman Sand Blast and Paladin Inner Light debuff durations
+- Moonfire debuff durations corrected
+- added debuff timer for Earth shock and inlcuded dependancy with Earths Grasp Talent
 
 ## Changelog v 0.52
 
