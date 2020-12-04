@@ -51,6 +51,7 @@ In general, those vanilla+ custom changes are:
 - Mindflay debuff time corrected
 - Shadow Word Pain should display correct in relation to Improved Shadow Word Pain talent
 - Shadow Word: Numb debuff duration is shown
+- Improved Psychic Scream talent acutally increases shown debuff time
 
 **Paladin:**
 - Improved Hammer of Justice should affect Hammers shown debuff time
@@ -68,6 +69,10 @@ In general, those vanilla+ custom changes are:
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
 
+
+## Changelog v 0.54
+
+- made Psychic Scream correlate with Improved Psychic Scream talent correctly (thx@ Hawaiisa)
 
 ## Changelog v 0.53
 
