@@ -207,7 +207,7 @@ pfUI:RegisterModule("vanillaplus", function()
             duration = duration + (countSWP and countSWP*3 or 0)
 			
 		  elseif effect == L["dyndebuffs"]["Psychic Scream"] then
-            local _,_,_,_,countIPS = GetTalentInfo(3,7)
+            local _,_,_,_,countIPS = GetTalentInfo(3,4)
             duration = duration + (countIPS and countIPS*1 or 0)
           end
 
