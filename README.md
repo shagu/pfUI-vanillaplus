@@ -86,7 +86,7 @@ In general, those vanilla+ custom changes are:
 - Multi and Aimed Shot cast time should be also influenced by Melee Specialization Talent
 - Added Shaman Sand Blast and Paladin Inner Light debuff durations
 - Moonfire debuff durations corrected
-- added debuff timer for Earth shock and inlcuded dependancy with Earths Grasp Talent
+- added debuff timer for Earth shock and included dependancy with Earths Grasp Talent
 
 ## Changelog v 0.52
 
