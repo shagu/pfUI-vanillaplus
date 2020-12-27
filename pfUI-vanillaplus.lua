@@ -59,6 +59,9 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
 	pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
 	pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=4.0,}
+	pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
+	pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
+	pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
   end
