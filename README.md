@@ -35,6 +35,8 @@ In general, those vanilla+ custom changes are:
 - Hunters Mark shows correct debuff time and is correctly affected by Improved Hunters Mark talent
 - Concussive and Scatter Shot show correct (new) duration
 - Scorpid Sting and improved Scorpid Sting show correct duration
+- Wyvern Sting now partially shows the correct duration (10 seconds on both the sleep and wake up slow, differentiating the times wasn't possible for me yet)
+- corrected Intimidation duration, corrected some pet's abilites durations 
 
 **Rogue:**
 - Duration altering talents affecting debuffs should work correctly (Total Control, Improved Gouge, Exhaustion, Serrated Blades)
@@ -68,6 +70,11 @@ In general, those vanilla+ custom changes are:
 - corrected a few totem durations
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
+
+## Changelog v 0.55
+
+- corrected Hunter talents Intimidation and Wyvern Sting debuff times (Wyvern sting shows 10 seconds on both Wyvern Sting parts)
+- corrected Hunter Pet Ability Screech debuff duration
 
 
 ## Changelog v 0.54
