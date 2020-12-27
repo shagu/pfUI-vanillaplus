@@ -35,7 +35,7 @@ In general, those vanilla+ custom changes are:
 - Hunters Mark shows correct debuff time and is correctly affected by Improved Hunters Mark talent
 - Concussive and Scatter Shot show correct (new) duration
 - Scorpid Sting and improved Scorpid Sting show correct duration
-- Wyvern Sting now partially shows the correct duration (10 seconds on both the sleep and wake up slow, differentiating the times wasn't possible for me yet)
+- Wyvern Sting now partially shows the correct duration (10 seconds on both the sleep and wake-up-slow, differentiating the times wasn't possible for me yet)
 - corrected Intimidation duration, corrected some pet's abilites durations 
 
 **Rogue:**
