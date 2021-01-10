@@ -72,8 +72,6 @@ pfUI:RegisterModule("vanillaplus", function()
     libtotem.totems["INV_Spear_04"] = {[-1] = 300}
     libtotem.totems["Spell_Nature_ManaRegenTotem"] = {[-1] = 300}
     libtotem.totems["Spell_Frost_SummonWaterElemental"] = {[-1] = 15}
-	libtotem.totems["Spell_Nature_ManaRegenTotem"] = {[-1] = 300}
-	libtotem.totems["INV_Spear_04"] = {[-1] = 300}
     libtotem.totems["Spell_Nature_GroundingTotem"] = {[-1] = 40}
   end
 
