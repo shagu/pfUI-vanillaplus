@@ -71,6 +71,10 @@ In general, those vanilla+ custom changes are:
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
 
+## Changelog v 0.56
+
+- corrected Healing Stream and Mana Spring Totem timers
+
 ## Changelog v 0.55
 
 - corrected Hunter talents Intimidation and Wyvern Sting debuff times (Wyvern sting shows 10 seconds on both Wyvern Sting parts)
