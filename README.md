@@ -15,7 +15,8 @@ The non-modular version of pfUI V+ will no longer be supported as this version o
 2. Unpack the Zip file
 3. Rename the folder "pfUI-vanillaplus-master" to "pfUI-vanillaplus"
 4. Copy "pfUI-vanillaplus" into Wow-Directory\Interface\AddOns
-5. Restart Wow
+5. Cut the file libtotem.lua and copy it into Wow-Directory/Interface/Addons/pfUI/
+6. Restart Wow
 
 ## Features
 
@@ -70,6 +71,11 @@ In general, those vanilla+ custom changes are:
 - corrected a few totem durations
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
+
+## Changelog v 0.57
+
+- now really corrected all Totem timers, unfortunately they have to be added manually for the time being--> see Install Instructions
+- added and corrected debuff timers for Stormstrike and Aftershock (since both debuffs have the same name i took 4 seconds for the Frost stun debuff)
 
 ## Changelog v 0.56
 
