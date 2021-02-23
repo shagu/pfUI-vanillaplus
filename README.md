@@ -72,6 +72,12 @@ In general, those vanilla+ custom changes are:
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
 
+
+## Changelog v 0.58
+
+- corrected Tranquil Air Totem duration (thanks@Molnezar)
+- corrected Rake duration
+
 ## Changelog v 0.57
 
 - now really corrected all Totem timers, unfortunately they have to be added manually for the time being--> see Install Instructions
