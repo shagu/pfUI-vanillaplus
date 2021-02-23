@@ -75,7 +75,7 @@ local totems = {
     --Nature Resistance Totem (Air)
     ["Spell_Nature_NatureResistanceTotem"] = {[-1] = 120},
     --Tranquil Air Totem (Air)
-    ["Spell_Nature_Brilliance"] = {[-1] = 120},
+    ["Spell_Fire_FrostResistanceTotem"] = {[-1] = 120},
     --Windfury Totem (Air)
     ["Spell_Nature_Windfury"] = {[-1] = 120},
     --Windwall Totem (Air)
