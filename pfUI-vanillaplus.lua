@@ -63,6 +63,7 @@ pfUI:RegisterModule("vanillaplus", function()
 	pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=4.0,}
 	pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
 	pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
+	pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
 	pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
@@ -75,6 +76,7 @@ pfUI:RegisterModule("vanillaplus", function()
     libtotem.totems["Spell_Nature_ManaRegenTotem"] = {[-1] = 300}
     libtotem.totems["Spell_Frost_SummonWaterElemental"] = {[-1] = 15}
     libtotem.totems["Spell_Nature_GroundingTotem"] = {[-1] = 40}
+	libtotem.totems["Spell_Fire_FrostResistanceTotem"] = {[-1] = 120}
   end
 
   do -- libcast overwrites
@@ -179,10 +181,8 @@ pfUI:RegisterModule("vanillaplus", function()
 			 -- Exhaustion
              duration = duration + (countEx and duration*(countEx*.25) or 0)
 
-          -- Total Control for Cheap Shot, Blind and Sap
+          -- Total Control for Cheap Shot
           elseif effect == L["dyndebuffs"]["Cheap Shot"]
-            or effect == L["dyndebuffs"]["Blind"]
-            or effect == L["dyndebuffs"]["Sap"]
           then
              local _,_,_,_,countTC = GetTalentInfo(1,16)
              duration = duration + (countTC and countTC*.5 or 0)
