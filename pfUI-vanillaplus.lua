@@ -237,7 +237,7 @@ pfUI:RegisterModule("vanillaplus", function()
             or effect == L["dyndebuffs"]["Immolate"]
             or effect == L["dyndebuffs"]["Corruption"]
           then
-             local _,_,_,_,countPM = GetTalentInfo(1,8)
+             local _,_,_,_,countPM = GetTalentInfo(1,18)
              duration = duration + (countPM and countPM*3 or 0)
           end
 
