@@ -73,6 +73,12 @@ In general, those vanilla+ custom changes are:
 - added debuff timer for Sand Blast
 
 
+
+## Changelog v 0.59
+
+- corrected Warlock's Talent Prolonged Misery Talent affecting the correspronding abilities shown debuff durations
+- cleaned up some code due to Total Control not affecting Blind and Sap any longer
+
 ## Changelog v 0.58
 
 - corrected Tranquil Air Totem duration (thanks@Molnezar)
