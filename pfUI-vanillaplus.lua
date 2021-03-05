@@ -8,8 +8,6 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["dyndebuffs"]["Hamstring"] = "Hamstring"
     pfUI_locale["enUS"]["dyndebuffs"]["Expose Armor"] = "Expose Armor"
     pfUI_locale["enUS"]["dyndebuffs"]["Garrote"] = "Garrote"
-    pfUI_locale["enUS"]["dyndebuffs"]["Blind"] = "Blind"
-    pfUI_locale["enUS"]["dyndebuffs"]["Sap"] = "Sap"
     pfUI_locale["enUS"]["dyndebuffs"]["Curse of Exhaustion"] = "Curse of Exhaustion"
     pfUI_locale["enUS"]["dyndebuffs"]["Curse of Recklessness"] = "Curse of Recklessness"
     pfUI_locale["enUS"]["dyndebuffs"]["Curse of Shadow"] = "Curse of Shadow"
@@ -59,8 +57,9 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
 	pfUI_locale["enUS"]["debuffs"]['Stormstrike']={[0]=10.0,}
 	pfUI_locale["enUS"]["debuffs"]['Aftershock']={[0]=4.0,}
+	pfUI_locale["enUS"]["debuffs"]['Flame Shock']={[0]=15.0,}
 	pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
-	pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=4.0,}
+	pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=3.0,}
 	pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
 	pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
 	pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
@@ -255,7 +254,7 @@ pfUI:RegisterModule("vanillaplus", function()
           -- Improved Hamstring
           elseif effect == L["dyndebuffs"]["Hamstring"] then
             local _,_,_,_,countIHS = GetTalentInfo(1,7)
-            duration = duration + (countIHS and countIHS*3 or 0)
+            duration = duration + (countIHS and countIHS or 0)
           end
 
         -- DRUID
