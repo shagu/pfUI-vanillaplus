@@ -72,6 +72,11 @@ In general, those vanilla+ custom changes are:
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
 
+
+## Changelog v 0.61
+
+- changed Shadow Weaving and Winter's Chill Debuff timers to reflect the patch changes
+
 ## Changelog v 0.60
 
 - changed durations according to 04.03.21 changelog
